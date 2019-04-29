@@ -10,6 +10,9 @@ Design.md - APLCourse
   - ⎕CSV
   - Objects
   - C# / .NET
+  - Refs
+  - ⎕OR
+  - ⎕NULL
   - History of APL
   - Tools
     - e.g. MiServer
