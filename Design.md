@@ -2,6 +2,16 @@ Design.md - APLCourse
 
 # A new APL course for beginners
 
+### TODO
+  Specific TODOs and things that exist but not currently listed in Learn.md
+  - Dfns.dyalog.com
+  - Idioms
+  - ⎕JSON
+  - ⎕CSV
+  - Objects
+  - C# / .NET
+  - Decide at what point / which parts of the course are going to just need a link to documentation / reference material.
+
 ### Course structure
 - A tree / mind map a la [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu)
   - [Learn.md](Learn.md)
