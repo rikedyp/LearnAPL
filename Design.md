@@ -54,8 +54,10 @@ Design.md - APLCourse
 
 ### Notebooks
 - TryAPL compatible
+  - Arithmetic.ipynb
+  - Tacit.ipynb
 - Other
-    - APL.ipynb
+  - APL.ipynb
 
 ### Content for specific circumstances
   - Students who are likely to deal with old code
