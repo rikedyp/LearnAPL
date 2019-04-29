@@ -11,6 +11,8 @@ Design.md - APLCourse
   - Objects
   - C# / .NET
   - History of APL
+  - Tools
+    - e.g. MiServer
   - Decide at what point / which parts of the course are going to just need a link to documentation / reference material.
 
 ### Course structure
