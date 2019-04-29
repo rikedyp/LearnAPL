@@ -9,6 +9,8 @@ Design.md - APLCourse
   - Core Language
   - Trace/edit
   - TODO: Decide from other courses / books
+    - Interpreter symbol groupings
+    - TryAPL symbol groupings
 - Videos
   - Each section in lesson style
     - Learning Objective
