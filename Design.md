@@ -78,7 +78,7 @@ Design.md - APLCourse
   - Jupyter Notebooks
     - More in depth explanations + interactive examples
     - Mostly TryAPL compatible notebooks 
-  - [TiO](TiO.run)
+  - [TiO](http://TiO.run)
   - Containerised online environments
     - APL Kernel Jupyter Notebooks
       - Eventually: Examples of APL interacting with other languages via different notebook kernels? (pipe dream? more effort than worth?)
