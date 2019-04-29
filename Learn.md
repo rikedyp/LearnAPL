@@ -16,10 +16,8 @@ Learn.md - APLCourse
       - Inner product, outer product
         - . ∘.
       - More operators
-        - \\ ⍀
-        - ⍣ ⍤
-        - ⌺
-        - ⌸
+        - \ ⍀
+        - ⍣
     - Structural functions
       - About arrays
         - Numeric
@@ -27,6 +25,7 @@ Learn.md - APLCourse
       - Rank
         ⍴⍴ ⍤ ↑ ↓
         ⌺
+        / ⌿ \ ⍀
       - Depth
         ≡ ↑ ↓
       - Indexing arrays
