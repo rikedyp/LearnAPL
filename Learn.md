@@ -43,6 +43,8 @@ Learn.md - APLCourse
     - Tacit functions
       - Trains
       - [Forks](Tacit.ipynb#Forks)
+  - ### Idioms
+    - Idiom map / tree by function category (what does the idiom do)
   - ### Namespaces
   - ### System Commands
     - )SAVE )LOAD )VARS )FNS
