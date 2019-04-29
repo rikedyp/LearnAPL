@@ -8,7 +8,7 @@ Learn.md - APLCourse
   - ### Core Language
     - [A Programming Language (for Mathematics)](APL.ipynb)
     - Maths / scalar functions
-      - + - × ÷ ⌈ ⌊
+      - \+ \- × ÷ ⌈ ⌊
       - ?
       - \* ⍟ ! |
       - ○
