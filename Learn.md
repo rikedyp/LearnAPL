@@ -6,6 +6,11 @@ Learn.md - APLCourse
 
 - # Learn Dyalog APL
   - ### Core Language
+    - A Programming Language (for Mathematics)
+      - $$ab$$ `a×b`
+      - $$e^x$$ `*x` 
+      - $${x}\over{y} `x÷y` 
+      - $$log_b a$$ `b⍟a` 
     - Maths / scalar functions
       - + - × ÷ ⌈ ⌊
       - ?
@@ -62,3 +67,4 @@ Learn.md - APLCourse
     - Errors
   - ### Internal workings
     Dyalog under the covers
+  - ### [History of APL](History.md)
