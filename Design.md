@@ -91,4 +91,4 @@ Design.md - APLCourse
 
 ### Resources
 - Check [Dyalog Tutorials](https://github.com/rikedyp/DyalogTutorials)
-
+- RIDE repo synonyms list (keyboard backtick something)
