@@ -9,6 +9,7 @@ Learn.md - APLCourse
     - [A Programming Language (for Mathematics)](APL.ipynb)
     - Primitives
       - Interlinked primitive map / tree
+      - [Primitive synonyms](https://github.com/Dyalog/ride/blob/master/src/bq.js)
     - Maths / scalar functions
       - \+ \- × ÷ ⌈ ⌊
       - ?
