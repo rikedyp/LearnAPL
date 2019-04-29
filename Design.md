@@ -56,6 +56,7 @@ Design.md - APLCourse
       - Eventually: Examples of APL interacting with other languages via different notebook kernels? (pipe dream? more effort than worth?)
     - RIDE
       - Full featured Dyalog session running on docker containers (kubernetes?) which just start again on crash
+    - Play-along Workspace
 
 ### Resources
 - Check [Dyalog Tutorials](https://github.com/rikedyp/DyalogTutorials)
