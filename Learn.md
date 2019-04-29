@@ -2,7 +2,7 @@ Learn.md - APLCourse
 
 # A tree view of the APL course content
 
-“Dyalog is a modern, array-first, multi-paradigm programming language, which supports functional, object-oriented and imperative programming, based on an APL language kernel.”
+“Dyalog is a modern, array-first, multi-paradigm programming language, which supports functional, object-oriented and imperative programming, based on an APL language kernel.”
 
 - # Learn Dyalog APL
   - ### Core Language
