@@ -49,6 +49,11 @@ Design.md - APLCourse
   - Teachable course
     - Same as videos, but customisable and face-to-face
 
+### Notebooks
+- TryAPL compatible
+- Other
+    - APL.ipynb
+
 ### Content for specific circumstances
   - Students who are likely to deal with old code
     - Names can include some special characters like ∆⍙_ and accented characters like ó:
