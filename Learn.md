@@ -41,6 +41,8 @@ Learn.md - APLCourse
     - TradFns
     - Dfns
     - Tacit functions
+      - Trains
+      - [Forks](Tacit.ipynb#Forks)
   - ### Namespaces
   - ### System Commands
     - )SAVE )LOAD )VARS )FNS
