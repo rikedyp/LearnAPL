@@ -14,6 +14,16 @@ Design.md - APLCourse
   - Tools
     - e.g. MiServer
   - Decide at what point / which parts of the course are going to just need a link to documentation / reference material.
+  - ##### From other resources:
+    - Interpreter handles memory management
+      - Copies of data made if necessary
+      - Ref counted, garbage collected, bounds checked
+    - Dynamically typed
+      - Types automatically change on overflow
+      - Types are squeezed to smallest reasonable internal representation
+    - OLE/COM and .NET
+    - SQL
+    - XML, JSON, CSV
 
 ### Course structure
 - A tree / mind map a la [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu)
