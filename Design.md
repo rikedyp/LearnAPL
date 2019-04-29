@@ -4,6 +4,7 @@ Design.md - APLCourse
 
 ### Course structure
 - A tree / mind map a la [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu)
+  - [Learn.md](Learn.md)
 - Suggested progression
   - Core Language
   - Trace/edit
