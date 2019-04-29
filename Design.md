@@ -92,3 +92,6 @@ Design.md - APLCourse
 ### Resources
 - Check [Dyalog Tutorials](https://github.com/rikedyp/DyalogTutorials)
 - RIDE repo synonyms list (keyboard backtick something)
+- Idiom lists
+  - [MiServer](https://miserver.dyalog.com/Examples/Applications/Idiom_Search.mipage)
+  - [APLWiki](https://aplwiki.com/FinnAplIdiomLibrary)
