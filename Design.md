@@ -39,6 +39,15 @@ Design.md - APLCourse
   - Teachable course
     - Same as videos, but customisable and face-to-face
 
+### Content for specific circumstances
+  - Students who are likely to deal with old code
+    - Names can include some special characters like ∆⍙_ and accented characters like ó:
+            a_ó∆ø1⍙ ← 230
+            a_ó∆ø1⍙ + 1
+      231 
+            ⍝ These are best avoided, but you may encounter them in old code.
+  - Students who will be using the Classic interpreter
+
 ### Technology
 - MiServer
 - Toggle between tree / mind map views
