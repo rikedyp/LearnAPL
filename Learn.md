@@ -7,6 +7,8 @@ Learn.md - APLCourse
 - # Learn Dyalog APL
   - ### Core Language
     - [A Programming Language (for Mathematics)](APL.ipynb)
+    - Primitives
+      - Interlinked primitive map / tree
     - Maths / scalar functions
       - \+ \- × ÷ ⌈ ⌊
       - ?
@@ -43,8 +45,10 @@ Learn.md - APLCourse
     - Tacit functions
       - Trains
       - [Forks](Tacit.ipynb#Forks)
-  - ### Idioms
-    - Idiom map / tree by function category (what does the idiom do)
+  - ### Libraries
+    - Idioms
+      - Idiom map / tree by function category (what does the idiom do)
+    - [APLTree](https://github.com/aplteam/apltree/wiki)
   - ### Namespaces
   - ### System Commands
     - )SAVE )LOAD )VARS )FNS
