@@ -33,6 +33,10 @@ Learn.md - APLCourse
         ≡ ↑ ↓
       - Indexing arrays
         [] ⌷ ⊃
+    - Variables
+      - Arrays
+      - Functions
+      - Objects
   - ### Function styles
     - TradFns
     - Dfns
