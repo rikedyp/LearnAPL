@@ -74,6 +74,7 @@ Design.md - APLCourse
   - Mind map view
     https://hunterx.xyz/use-mindmap-in-hexo.html
     https://github.com/dundalek/markmap
+    http://www.webgraphviz.com/
 - Search: have branches and leaves dynamically appear / disappear as relevance to search terms?
 - Markdown, HTML5, CSS, Optional JS
 - Mobile / tablet friendly
