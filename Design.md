@@ -10,6 +10,7 @@ Design.md - APLCourse
   - ⎕CSV
   - Objects
   - C# / .NET
+  - History of APL
   - Decide at what point / which parts of the course are going to just need a link to documentation / reference material.
 
 ### Course structure
