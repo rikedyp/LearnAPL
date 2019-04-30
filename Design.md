@@ -73,11 +73,13 @@ Design.md - APLCourse
 - Toggle between tree / mind map views
   - Tree view
     Expandable branches (CSS +/ JS)
+    http://code.iamkate.com/javascript/collapsible-lists/
   - Mind map view
     https://hunterx.xyz/use-mindmap-in-hexo.html
     https://github.com/dundalek/markmap
     http://www.webgraphviz.com/
 - Search: have branches and leaves dynamically appear / disappear as relevance to search terms?
+  - https://listjs.com/
 - Markdown, HTML5, CSS, Optional JS
 - Mobile / tablet friendly
 - Interactivity
