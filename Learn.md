@@ -7,6 +7,7 @@ Learn.md - APLCourse
 - # Learn Dyalog APL
   - ### Core Language
     - [A Programming Language (for Mathematics)](APL.ipynb)
+    - Syntax
     - Primitives
       - Interlinked primitive map / tree
       - [Primitive synonyms](https://github.com/Dyalog/ride/blob/master/src/bq.js)
