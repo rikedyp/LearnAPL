@@ -80,6 +80,7 @@ Design.md - APLCourse
     http://viz-js.com/
 - Search: have branches and leaves dynamically appear / disappear as relevance to search terms?
   - https://listjs.com/
+  - Searchable data table with links to relevant reference docs and tutorials
 - Markdown, HTML5, CSS, Optional JS
 - Mobile / tablet friendly
 - Interactivity
