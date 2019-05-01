@@ -2,6 +2,20 @@ Design.md - APLCourse
 
 # A new APL course for beginners
 
+### Development
+  Outline of goals and provisional timeline of development process
+  - Prototype (in progress)
+    By 03/05/2019
+  - Core language (up to that included in the 2019/03 course)
+    TBD
+  - System commands and functions (essential)
+    TBD
+  - Dyalog interface (up to that included in the 2019/03 course)
+    TBD
+  - List of topics to be covered in the teachable (3-5 day) course
+    TBD
+  All other content is low priority
+
 ### TODO
   Specific TODOs and things that exist but not currently listed in Learn.md
   - Dfns.dyalog.com
