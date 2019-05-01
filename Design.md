@@ -115,3 +115,4 @@ Design.md - APLCourse
 - Idiom lists
   - [MiServer](https://miserver.dyalog.com/Examples/Applications/Idiom_Search.mipage)
   - [APLWiki](https://aplwiki.com/FinnAplIdiomLibrary)
+- [Resource card](http://docs.dyalog.com/16.0/ReferenceCard.pdf)
