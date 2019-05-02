@@ -12,7 +12,7 @@ Learn.md - APLCourse
       - Interlinked primitive map / tree
       - [Primitive synonyms](https://github.com/Dyalog/ride/blob/master/src/bq.js)
     - Maths / scalar functions
-      - \+ \- × ÷ ⌈ ⌊
+      - \+ \- × ÷ ⌈ ⌊ |
       - ?
       - \* ⍟ ! |
       - ○
