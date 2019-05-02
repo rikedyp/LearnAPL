@@ -5,7 +5,7 @@ Design.md - APLCourse
 ### Development
   Outline of goals and provisional timeline of development process
   - Prototype (in progress)
-    By 03/05/2019
+    By 10/05/2019
   - Core language (up to that included in the 2019/03 course)
     TBD
   - System commands and functions (essential)
