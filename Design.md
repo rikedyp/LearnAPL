@@ -5,6 +5,9 @@ Design.md - APLCourse
 ### Development
   Outline of goals and provisional timeline of development process
   - Prototype (in progress)
+    - Clickable map for topics covered so far
+    - Mock structure for mini course
+    - Subset of searchable items in datatable
     By 10/05/2019
   - Core language (up to that included in the 2019/03 course)
     TBD
@@ -95,6 +98,7 @@ Design.md - APLCourse
 - Search: have branches and leaves dynamically appear / disappear as relevance to search terms?
   - https://listjs.com/
   - Searchable data table with links to relevant reference docs and tutorials
+    https://github.com/abrudz/APLcart
 - Markdown, HTML5, CSS, Optional JS
 - Mobile / tablet friendly
 - Interactivity
