@@ -1,0 +1,18 @@
+graph APL{
+    "APL" -- "Syntax"
+    "APL" -- "Arithmetic"
+    "Arithmetic" -- "Scalar functions"
+    "Arithmetic" -- "Reduction"
+    "Reduction" -- "Operators"
+    "Syntax" -- "Operators"
+    "Syntax" -- "Tacit"
+    "Syntax" -- "Dfns"
+    "Syntax" -- "Tradfns"
+    "Dfns" -- "Operators"
+    "Tradfns" -- "Operators"
+    "Tacit" -- "Trains"
+    "Tacit" -- "Forks"
+    "Syntax" -- "Scalar functions"
+    "Scalar functions" -- "Roll"
+    "Roll" -- "Number Generators"
+}
