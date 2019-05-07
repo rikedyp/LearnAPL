@@ -7,6 +7,24 @@ Design.md - APLCourse
   - Prototype (in progress)
     - Clickable map for topics covered so far
     - Mock structure for mini course
+      - Intro - content - assessment for ≥3 topics
+        - Arithmetic
+        - Structural functions
+          - Selection
+            - Take / drop
+            - Square brackets
+              - Squad
+            - Pick
+          - Shape / reshape
+          - Mix / Split
+        - Operators
+          - Reduction / expansion
+          - Power
+          - Commute
+          - Dops
+            - Recreate the above as Dops
+            - Some higher order function
+            - (later) Trapezium rule / numeric integration
     - Subset of searchable items in datatable
     By 10/05/2019
   - Core language (up to that included in the 2019/03 course)
