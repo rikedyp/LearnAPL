@@ -7,8 +7,14 @@ Design.md - APLCourse
   - Prototype (in progress)
     - Clickable map for topics covered so far
     - Mock structure for mini course
-      - Intro - content - assessment for ≥3 topics
+      - Interface
+        - The language bar / symbol input methods
+        - Saving work: workspace + text source
+        - Function editor / tracing
+        - Intro - content - assessment for ≥3 topics
+      - APL
         - Arithmetic
+        - Logic
         - Structural functions
           - Selection
             - Take / drop
