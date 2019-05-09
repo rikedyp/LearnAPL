@@ -21,6 +21,7 @@ Design.md - APLCourse
             - Square brackets
               - Squad
             - Pick
+            - Compress
           - Shape / reshape
           - Mix / Split
         - Operators
@@ -45,6 +46,7 @@ Design.md - APLCourse
 
 ### TODO
   Specific TODOs and things that exist but not currently listed in Learn.md
+  - Fractional catenation A,[0.5]B
   - Dfns.dyalog.com
   - Idioms
   - ⎕JSON
