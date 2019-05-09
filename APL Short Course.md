@@ -6,6 +6,9 @@ Intro - content - assessment for ≥ 3 topics
 APL is a mathematical notation for writing programs.  
 It is a programming language.
 
+TODO: There may be a clear break where being in the interpreter is easier / more useful / necessary.
+      Find the break point.
+
 ## 1. Basics / mathematics
 Arithmetic|Arrays|Scalar extension|Emptiness|Index generator|⎕A
 
@@ -133,20 +136,46 @@ Find the lowest number in vec
 
 ### Not-yet-included required knowledge
 - Outer product ∘.
+  - Addition table
+  - Multiplication table
+  - Powers table
+  - Log table
+- Big numbers (E notation)
+- Grade
 - Enlist
-- Ravel
+- Ravel / table
+- Catenate / first
+- Compress / replicate
 - Enclose
 - Partition enclose
 - Syntax
 - Dfns/Tradfns/Tacit ??
 - Logic / comparisons
+  - ∨\/
+  - ∧\/
+
+### Frequently used session things
+- Ctrl+Shift+Backspace
+- Ctrl+Enter
 
 #### Potential problems / problem domains
 Ideally problems domains as broad as possible
-
+- Formula translation
+- Order of operations
+  - Spot the difference
+    - `(x*2) - (2×x×y) + y*2` 
+  - `2 2 + 2 2`
 - Arithmetic / algebra
   - Quadratic equation / polynomials
 - Statistics / classification
+- Logical / relational functions
+  - Odd or even?
+  - Multiple of 2?
+  - Multiple of 3 or 5?
+  - Fractional part of numbers
+  - 321='321'
+  - Set C to 16 if A>B, otherwise 15
+  - Set C to 42 if N>Min and N<Max, else 50
 - Text processing
   - Chinese takeaway menu outer product
 - Image processing
@@ -155,3 +184,4 @@ Ideally problems domains as broad as possible
   - Fractal image?
 - Geometry
 - Finance / business
+- Something like DyalogIntro3 p.105,107
