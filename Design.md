@@ -47,6 +47,11 @@ Design.md - APLCourse
 ### TODO
   Specific TODOs and things that exist but not currently listed in Learn.md
   - Fractional catenation A,[0.5]B
+  - How to find out stuff
+    - F1 help
+    - Web help
+    - Guides / docs / books
+    - Try stuff out
   - Dfns.dyalog.com
   - Idioms
   - ⎕JSON
@@ -145,4 +150,4 @@ Design.md - APLCourse
 - Idiom lists
   - [MiServer](https://miserver.dyalog.com/Examples/Applications/Idiom_Search.mipage)
   - [APLWiki](https://aplwiki.com/FinnAplIdiomLibrary)
-- [Resource card](http://docs.dyalog.com/16.0/ReferenceCard.pdf)
+- [Reference card](http://docs.dyalog.com/16.0/ReferenceCard.pdf)
