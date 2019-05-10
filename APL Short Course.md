@@ -9,6 +9,8 @@ It is a programming language.
 TODO: There may be a clear break where being in the interpreter is easier / more useful / necessary.
       Find the break point.
 
+TODO: Have others attempt to solve problem sets, see what alternative solutions reveal
+
 ## 1. Basics / mathematics
 Arithmetic|Arrays|Scalar extension|Emptiness|Index generator|⎕A
 
