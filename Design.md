@@ -34,6 +34,10 @@ Design.md - APLCourse
             - (later) Trapezium rule / numeric integration
     - Subset of searchable items in datatable
     By 10/05/2019
+  - APL medium course
+    Should provide more than enough of a basis for students to attempt (including knowledge of how to find things out for themselves) the student competition problems
+  - APL long course
+    Full materials touching the basics of most of the features in Dyalog
   - Core language (up to that included in the 2019/03 course)
     TBD
   - System commands and functions (essential)
