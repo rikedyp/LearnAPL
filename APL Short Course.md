@@ -27,6 +27,7 @@ What do these do?
 ```APL
 + - × ÷ * ⍟ | ⌈ ⌊
 ```
+Negative numbers are represented by a high minus ¯ (TI calculators do this)
 
 #### Problem set 1. (the type of maths / word problems you would get when learning this in school - a quick refresher)
 
@@ -91,7 +92,7 @@ Arrays must be conformable. This means either:
 Otherwise, RANK or LENGTH ERROR
 
 ### 1.4 Data generation
-For the sake of convenience in section 2, we now introduce the index generator ⍳
+For the sake of convenience in the next problem set, we now introduce the index generator ⍳  
 ⍳10
 
 #### Problem set 2. Functions applied to arrays
@@ -99,8 +100,11 @@ Use reshape to generate the 3×3 identity matrix
 Generate the first N odd numbers
 ⍴vec+1 vs. 1+⍴vec
 
-## N. Prefix and infix - when to talk syntax? (maybe later...)
-required for Outliers problem?
+profit←price-cost
+total profit
+
+A company places its profits in a bank account with a 3% annual interest rate
+Provided a list of prices, a list of costs and a table of sales (or list of annual sales), calculate balance of profit account after N years
 
 ## 2. Operators make arrays fun and easy to use!™
 
@@ -112,6 +116,38 @@ required for Outliers problem?
 Sum the numbers from 1 to 100
 Find the greatest number in vec
 Find the lowest number in vec
+
+## 3. Syntax: symbols have a double meaning
+The grammatical rules of APL are simple:
+Functions take arrays as arguments and produce arrays as results
+Functions take the result of statements to their right as their argument
+Functions can also take a left argument.
+1 - 2
+\- 4 (implies 0-4)
+2\*3
+\*3 (base of natural log)
+3×5
+×¯10+⍳20 (signum)
+
+## 3. Selection and indexing: Finding stuff in and getting stuff out of arrays
+
+### 3.1 Compress / replicate
+/ is an operator and a function, depending on context.
+/ with numeric data on the left and an array on the right replicates data along the trailing axis.
+1 1 0 1 0 / 'APPLE'
+1 2 3 4 5/'APPLE'
+{⍵/⍳⍴⍵}1 1 0 1 0 (students attempt to derive ⍸)
+
+### 3.2 Square bracket indexing
+This syntax has been adopted by other programming languages.
+'APPLE'[1 2 4]
+'APPLE'['APPLE'⍳'APL']
+
+## 5. User defined functions
+In APL, many things can be achieved without writing "programs"
+[EXAMPLES]
+Obviously, more involved tasks require the use of programs / algorithms
+Dfns.
 
 #### Problem set N. Actual programs (combined knowledge)
   Find the outliers in vec
@@ -148,6 +184,9 @@ Find the lowest number in vec
 - Ravel / table
 - Catenate / first
 - Compress / replicate
+  - (colour∊⊂'orange')/wingspan
+  - 1 1 0 0 1 0/'APPLE'
+- Take / drop
 - Enclose
 - Partition enclose
 - Syntax
@@ -186,4 +225,15 @@ Ideally problems domains as broad as possible
   - Fractal image?
 - Geometry
 - Finance / business
+  - Budgeting
+  - Cash-flow forecasting
+  - Break-even analysis
+    - Cost, price, how many do I need to sell to break even?
+  - Ratio analysis?
+- Electronics
+  - Convert between binary, decimal, hexadecimal and BCD
+  - Period to frequency conversion ÷
+  - DeMorgan's law
+  - 
+
 - Something like DyalogIntro3 p.105,107
