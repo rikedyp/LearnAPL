@@ -63,8 +63,8 @@ If the number of elements in the target shape is greater than the number of elem
       3 3 ⍴ 3 5 7
 etc...
 
-The shape of a numeric scalar is the empty numeric vector ⍬
-The shape of a character scalar is the empty character vector ''
+The shape of a scalar is the empty numeric vector ⍬
+The empty character vector is ''
 
 The shape of the shape of an array returns a 1-element vector describing the rank.
 From version 14, ≢⍴ returns the scalar rank of an array.
@@ -129,21 +129,37 @@ Functions can also take a left argument.
 3×5
 ×¯10+⍳20 (signum)
 
-## 3. Selection and indexing: Finding stuff in and getting stuff out of arrays
+## 4. Arrays contain arrays
+Previously stated arrays contain numeric, character or array data.
+The fundamental character data is a scalar (rank-0 array)
+The fundamental numeric data is a scalar (rank-0 array)
+So really arrays just contain arrays.
+Arrays are either simple or nested.
 
-### 3.1 Compress / replicate
+### 4.1 Simple vs. nested arrays
+('this' '' 'that')∊⊂''
+simplenum←⍳10
+simplechar←⎕A
+array←3 3⍴0 1 (1 2 3) 'APL' ('nested' ('array' 2 3)) 'A' (3 4 5) 'PL' (6 7 8)
+
+## 5. Selection and indexing: Finding stuff in and getting stuff out of arrays
+
+### 5.1 Enlist / membership / find
+∊ returns a list of the scalar elements in the leaf nodes of an array
+
+### 5.3 Compress / replicate
 / is an operator and a function, depending on context.
 / with numeric data on the left and an array on the right replicates data along the trailing axis.
 1 1 0 1 0 / 'APPLE'
 1 2 3 4 5/'APPLE'
 {⍵/⍳⍴⍵}1 1 0 1 0 (students attempt to derive ⍸)
 
-### 3.2 Square bracket indexing
+### 5.4 Square bracket indexing
 This syntax has been adopted by other programming languages.
 'APPLE'[1 2 4]
 'APPLE'['APPLE'⍳'APL']
 
-## 5. User defined functions
+## 6. User defined functions
 In APL, many things can be achieved without writing "programs"
 [EXAMPLES]
 Obviously, more involved tasks require the use of programs / algorithms
@@ -171,6 +187,8 @@ Dfns.
 - Greater / less than / equal to logical comparison
 - Pick
 - Indexing
+
+#### Final task: TODO - create / choose / 
 
 ### Not-yet-included required knowledge
 - Outer product ∘.
