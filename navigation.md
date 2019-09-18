@@ -3,14 +3,14 @@
 [Lessons]()
 
   * # APL101
-  * [SubMenu Item 1](subitem1.md)
+  * [test simple iframes](#!test2.md)
   * [SubMenu Item 2](subitem2.md)
   - - - -
   * # Jupyter test
-  * [SubMenu Item 3](#!test.md)
+  * [test](#!test.md)
   - - - -
   * # MD test
-  * [SubMenu Item 3](#!test1.md)
+  * [test1](#!test1.md)
 
 [Problem sets](#!ProblemSets/README.md)
 - - - -
