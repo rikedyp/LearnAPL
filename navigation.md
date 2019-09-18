@@ -1,7 +1,5 @@
 # APLcourse
 
-[gimmick:themechooser](Choose theme)
-
 [Lessons]()
 
   * # APL101
@@ -17,3 +15,5 @@
 [Problem sets](#!ProblemSets/README.md)
 - - - -
 [Projects](#!Projects/README.md)
+
+<div style="text-align: right">[gimmick:themechooser](Choose theme)</div>
