@@ -1,0 +1,15 @@
+body {
+    background: white;
+    font-family: "Ubuntu";
+    font-size: 2em;
+    margin-top: -3em;
+}
+h1{
+    font-size: 2em!important;
+}
+h2{
+    font-size: 1.5em!important;
+}
+h3{
+    font-size: 1.2em;
+}
