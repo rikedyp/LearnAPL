@@ -1,5 +1,7 @@
 # APLcourse
 
+[gimmick:themechooser](Choose theme)
+
 [Lessons]()
 
   * # APL101
