@@ -13,9 +13,9 @@
   * [test1](#!test1.md)
 
 [Problem sets](#!ProblemSets/README.md)
-- - - -
+
 [Projects](#!Projects/README.md)
 
-<li><div style="margin-right: 60vw;"> </div></li>
+<li><div style="margin-right: calc(100vw - 45em);"> </div></li>
 
 [gimmick:themechooser](Choose theme)
