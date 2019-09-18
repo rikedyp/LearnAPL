@@ -14,4 +14,4 @@
 
 [Problem sets](#!ProblemSets/README.md)
 - - - -
-[Projects](#!Projects)
+[Projects](#!Projects/README.md)
