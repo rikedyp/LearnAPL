@@ -1,7 +1,7 @@
 ## Test embedding html Jupyter notebook with MDwiki
 
-### version 4
+### version 5
 
-<iframe src="https://raw.githubusercontent.com/rikedyp/APLCourse/master/tmp/Creating%20your%20first%20Dyalog%20Jupyter%20Notebook.html" width = "100%">TESTING IFRAMEEEE</iframe>
+Below is a static rendered Jupyter notebook. If you cannot see it, you can try using the [nbviewer](). You can interact with the notebook on our [Binder]() (it may take a minute to load Jupyter). 
 
-<iframe src="Creating your first Dyalog Jupyter Notebook.slides.html">simplify</iframe>
+<iframe src="Creating your first Dyalog Jupyter Notebook.slides.html" width=100% height="100%">simplify</iframe>
