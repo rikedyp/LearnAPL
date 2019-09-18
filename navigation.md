@@ -1,8 +1,6 @@
 # APLcourse
 
-[gimmick:themechooser](Choose theme)
-
-[Lessons]()
+[Tutorials]()
 
   * # APL101
   * [test simple iframes](#!test2.md)
@@ -17,3 +15,7 @@
 [Problem sets](#!ProblemSets/README.md)
 - - - -
 [Projects](#!Projects/README.md)
+
+<li><div style="margin-right: 60vw;"> </div></li>
+
+[gimmick:themechooser](Choose theme)
