@@ -1,17 +1,17 @@
 # APLcourse
 
-[Menu Item 1]()
+[Lessons]()
 
-  * # SubMenu Heading 1
+  * # APL101
   * [SubMenu Item 1](subitem1.md)
   * [SubMenu Item 2](subitem2.md)
   - - - -
-  * # SubMenu Heading 2
-  * [SubMenu Item 3](subitem3.md)
+  * # Jupyter test
+  * [SubMenu Item 3](test.md)
   - - - -
-  * # SubMenu Heading 3
-  * [SubMenu Item 3](subitem3.md)
+  * # MD test
+  * [SubMenu Item 3](test1.md)
 
-[Menu Item 2](item2.md)
+[Problem sets](Problem-sets/README.md)
 - - - -
-[Menu Item 3](item3.md)
+[Projects](Projects)
