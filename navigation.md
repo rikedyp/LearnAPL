@@ -12,6 +12,6 @@
   * # MD test
   * [SubMenu Item 3](test1.md)
 
-[Problem sets](Problem-sets/README.md)
+[Problem sets](ProblemSets/README.md)
 - - - -
 [Projects](Projects)
