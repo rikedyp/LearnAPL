@@ -1,5 +1,2 @@
-.ipynb_checkpoints
-Solutions.ipynb
-Solutions.dyalog
+*.ipynb_checkpoints
 Solutions.dws
-sessions.dcf
