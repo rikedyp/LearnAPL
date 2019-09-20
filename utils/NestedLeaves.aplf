@@ -1,0 +1,7 @@
+ NestedLeaves←{
+     ⍺←0             ⍝ Default depth 0
+     1=≡,⍵:⊂,⊂⍵      ⍝ Leaf node value
+     node←⊂1↑⍵       ⍝ Node value
+     subs←(⍺+1)∇¨1↓⍵ ⍝ Sub-trees
+     ,⌿node⍪↑subs
+ }

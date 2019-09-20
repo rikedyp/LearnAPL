@@ -1,0 +1,18 @@
+ TOC←NestedTOC dir;lsdir;ignore;ls;top;dirfilter
+ ⍝ Generate nested vector representation of a directory
+ ⎕←dir
+ lsdir←⎕SH'dir ',dir
+ :Trap 6 22
+     ignore←'*'~⍨¨(⎕UCS 10)(≠⊆⊢)⊃⎕NGET dir,'\.gitignore'
+     ls←ignore~⍨{⊃⌽' '(≠⊆⊢)⍵}¨7↓lsdir
+ :Else
+     ls←{⊃⌽' '(≠⊆⊢)⍵}¨7↓lsdir
+ :EndTrap
+ top←ls[⍸⎕A∊⍨⊃¨ls]
+ TOC←dir∘MDLink¨top
+ dirfilter←'.'(~∊)¨top
+ :If '.'≡dir ⍝ Top level directory '.'
+     TOC,←NestedTOC¨top
+ :ElseIf ∨/'.'(~∊)¨top ⍝ Not a file 'file.extension'
+     TOC,←NestedTOC¨(⊂dir,'\'),¨dirfilter/top
+ :EndIf

@@ -1,0 +1,15 @@
+ MD←TOC2MD TOC;MDList;depth;leaves;noblanks;i;spaces;noREADME
+ MDList←{'- [',⍵,'](',⍵,')'}
+ depth←≡¨TOC
+ ⍝MD←MDList¨TOC/⍨1=depth
+ MD←(TOC/⍨1=depth)(,,⍤0)TOC/⍨1≠depth
+ spaces←∊NestedDepth MD
+ ⍝MD(,,⍤0)↑¨MDList¨¨TOC/⍨1≠depth
+ ⍝MD←{⍵⌿⍨~,∧/⍵=⍤1⊢' '},[1 2]↑MD(,,⍤0)(⊂' '),¨↑¨MDList¨¨TOC/⍨1≠depth
+ leaves←⊃NestedLeaves MD
+ noblanks←(~leaves(∧/=)¨⊂' ')
+ noREADME←~'- [README.md]'∘{⍺≡(≢⍺)↑⍵}¨leaves
+ leaves←leaves/⍨noblanks∧noREADME
+ spaces←spaces/⍨noREADME/⍨noblanks
+ MD←↑{,/⍵}⌺(2 1⍴2)⊢((2×spaces)/¨' ')(,,⍤0)leaves
+⍝

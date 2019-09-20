@@ -1,0 +1,4 @@
+ TOC←GenerateTOC dir;toc
+ ⍝ Generate Markdown Table of Contents from directory
+ toc←NestedTOC dir
+ TOC←TOC2MD toc
