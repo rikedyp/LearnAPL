@@ -37,6 +37,12 @@ We have some curated catalogues of content for different purposes.
 - [I am an old APLer and want to learn about modern APL]()
 
 # Contents
+  - [Catalogues](./Catalogues/README.md)                                      
+    - [Noobs.ipynb](Catalogues/Noobs.ipynb)                                   
+  - [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)                                
+  - [CONTRIBUTING.md](./CONTRIBUTING.md)                                      
+  - [Dockerfile](./Dockerfile/README.md)                                      
+  - [LICENSE](./LICENSE/README.md)                                            
   - [ProblemSets](./ProblemSets/README.md)                                    
     - [Problems.ipynb](ProblemSets/Problems.ipynb)                            
     - [ThinkingAPL.ipynb](ProblemSets/ThinkingAPL.ipynb)                      
@@ -44,7 +50,7 @@ We have some curated catalogues of content for different purposes.
       - [BSDwords.txt](ProblemSets/WordProblems/BSDwords.txt)                 
       - [WordProblems.ipynb](ProblemSets/WordProblems/WordProblems.ipynb)     
   - [Projects](./Projects/README.md)                                          
-    - [WikiMap.ipynb](Projects/WikiMap.ipynb)                                 
+    - [APLCourseMap.ipynb](Projects/APLCourseMap.ipynb)                       
   - [Tutorials](./Tutorials/README.md)                                        
     - [APL.ipynb](Tutorials/APL.ipynb)                                        
     - [Arithmetic.ipynb](Tutorials/Arithmetic.ipynb)                          
@@ -57,4 +63,4 @@ We have some curated catalogues of content for different purposes.
     - [Operators.ipynb](Tutorials/Operators.ipynb)                            
     - [Scalar.ipynb](Tutorials/Scalar.ipynb)                                  
     - [Selection.ipynb](Tutorials/Selection.ipynb)                            
-    - [Tacit.ipynb](Tutorials/Tacit.ipynb) 
+    - [Tacit.ipynb](Tutorials/Tacit.ipynb)
