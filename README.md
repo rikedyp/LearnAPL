@@ -13,7 +13,16 @@ All of the course materials are in [Jupyter notebooks](https://jupyter.org/). Th
 These will be fine for many of the tutorials and short problems. However, if you want to save your work and continue later - as you might when tackling one of the [project ideas](Projects/README.md) - then you should either [install Jupyter locally](Tutorials/InstallingDyalogJupyter.ipynb) or [install Dyalog](https://www.dyalog.com/download-zone.htm). In fact, you will need to install Dyalog in order to use Dyalog Jupyter notebooks locally on your machine.
 
 ### **QuickStart**
-You can view nicely rendered, static (non-interactive), notebooks using [nbviewer](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/tree/master/). To view interactive notebooks you can use our [binder](https://mybinder.org/v2/gh/rikedyp/APLcourse/master).
+You can view nicely rendered, static (non-interactive), notebooks using [nbviewer](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/tree/master/). To view interactive notebooks you can use our [binder](https://mybinder.org/v2/gh/rikedyp/APLcourse/master).  
+
+**Note:** Any changes made to notebooks using the binder will not be saved unless you download the notebook.
+
+**Note:** You can use the [Jupyter lab]() interface with the binder by replacing `tree` with `lab` in the URL.
+```
+            https://hub.gke.mybinder.org/user/rikedyp-aplcourse-f3dwjwuh/tree
+tree → lab
+            https://hub.gke.mybinder.org/user/rikedyp-aplcourse-f3dwjwuh/lab            
+```
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rikedyp/APLcourse/master)
 
