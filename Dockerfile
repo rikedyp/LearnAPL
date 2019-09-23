@@ -3,4 +3,5 @@ COPY ./Tutorials ${HOME}/Tutorials
 COPY ./Projects ${HOME}/Projects
 COPY ./ProblemSets ${HOME}/ProblemSets
 ADD ./README.md ${HOME}
+USER root
 RUN chmod -R 777 ${HOME}/*
