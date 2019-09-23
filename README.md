@@ -15,6 +15,10 @@ These will be fine for many of the tutorials and short problems. However, if you
 ### **QuickStart**
 You can view nicely rendered, static (non-interactive), notebooks using [nbviewer](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/tree/master/). To view interactive notebooks you can use our [binder](https://mybinder.org/v2/gh/rikedyp/APLcourse/master).  
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rikedyp/APLcourse/master)
+
+**Note:** The binder may take a minute to load. If you just want to quickly view something then use the [nbviewer](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/tree/master/).
+
 **Note:** Any changes made to notebooks using the binder will not be saved unless you download the notebook.
 
 **Note:** You can use the [Jupyter lab]() interface with the binder by replacing `tree` with `lab` in the URL.
@@ -23,8 +27,6 @@ You can view nicely rendered, static (non-interactive), notebooks using [nbviewe
 tree → lab
             https://hub.gke.mybinder.org/user/rikedyp-aplcourse-f3dwjwuh/lab            
 ```
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rikedyp/APLcourse/master)
 
 ## Uh... where do I start?
 We have some curated catalogues of content for different purposes.
