@@ -7,6 +7,12 @@ These materials are designed to teach you how to solve real problems using compu
 
 There is also a collection of [tutorials](Tutorials) on various specific APL and programming concepts. There may be linked references to external resources, such as the [APL Wiki](https://aplwiki.miraheze.org) or the book [Mastering Dyalog APL](https://www.dyalog.com/mastering-dyalog-apl.htm).
 
+## How do I use this?
+All of the course materials are in [Jupyter notebooks](https://jupyter.org/). These are interactive documents with code blocks which can be executed if you view them in a Jupyter environment.
+
+### QuickStart
+You can view nicely rendered, static (non-interactive), notebooks using [nbviewer]()
+
 ## Uh... where do I start?
 We have some curated catalogues of content for different purposes.
 ### Who are you?
