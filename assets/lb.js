@@ -43,7 +43,7 @@ let t,ts=[],lb=el.firstChild,bqm=0 //t:textarea or input, lb:language bar, bqm:b
 let pd=x=>x.preventDefault()
 let ev=(x,t,f,c)=>x.addEventListener(t,f,c)
 ev(lb,'mousedown',x=>{
-  if(x.target.classList.contains('ngn_x')){lb.hidden=1;upd();pd(x);return}
+  if(x.target.classList.contains('ngn_x')){lb.hidden=1;bodyUp();upd();pd(x);return}
   if(x.target.nodeName==='B'&&t){
     let i=t.selectionStart,j=t.selectionEnd,v=t.value,s=x.target.textContent
     if(i!=null&&j!=null){t.value=v.slice(0,i)+s+v.slice(j);t.selectionStart=t.selectionEnd=i+s.length}
@@ -72,3 +72,18 @@ let upd=_=>{d.body.style.marginTop=lb.clientHeight+'px'}
 upd();ev(window,'resize',upd)
 ev(d,'focus',ff,!0);let ae=d.activeElement;ae&&ff({type:'focus',target:ae})
 })();
+bodyDown();
+function bodyDown(){
+  try{
+    document.getElementById("main").style.top = "1.4em";
+  }catch{
+    null;
+  }
+}
+function bodyUp(){
+  try{
+    document.getElementById("main").style.top = "0em";
+  }catch{
+    document.body.style.marginTop = "0em";
+  }
+}
