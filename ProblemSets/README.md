@@ -2,6 +2,7 @@
 
 Short problems to reinforce learning of particular concepts.
 
+  - [PrimitiveProblems.ipynb](./PrimitiveProblems.ipynb)   
   - [Problems.ipynb](./Problems.ipynb)                     
   - [ThinkingAPL.ipynb](./ThinkingAPL.ipynb)               
   - [WordProblems](./WordProblems/README.md)               
