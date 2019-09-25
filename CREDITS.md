@@ -12,4 +12,4 @@ The section on Graphical User Interfaces focuses on `⎕WC`, a function which pr
 
 [Downey, Allen. Think Python. " O'Reilly Media, Inc.", 2012.](https://greenteapress.com/wp/think-python/)
 
-This book's structured take on teaching programming from scratch has been a great inspiration. Specifically, the catalogues for programming novices have been heavily inspired by this book and some of the explanations have been shameless ripped out from the book. Thankfully, this has been allowed by the author since they published the book under the [Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license](https://creativecommons.org/licenses/by-nc/3.0/).
+This book's structured take on teaching programming from scratch has been a great inspiration. Specifically, the [catalogue for programming novices](Catalogues/Noobs.ipynb) has been heavily inspired by this book and some of the explanations have been shameless ripped out from the book. Thankfully, this has been allowed by the author since they published the book under the [Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license](https://creativecommons.org/licenses/by-nc/3.0/).
