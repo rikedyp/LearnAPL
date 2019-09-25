@@ -1,6 +1,5 @@
 FROM rikedyp/dyalog-jupyter-binder:50
 COPY ./Catalogues ${HOME}/Catalogues
-COPY ./img ${HOME}/img
 COPY ./Tutorials ${HOME}/Tutorials
 COPY ./Projects ${HOME}/Projects
 COPY ./ProblemSets ${HOME}/ProblemSets
