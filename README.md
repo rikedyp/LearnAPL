@@ -19,7 +19,7 @@ You can view nicely rendered, static (non-interactive), notebooks using [nbviewe
 
 In any case, check out the notebook [README](README.ipynb) to get started.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rikedyp/APLcourse/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rikedyp/APLcourse/master?urlpath=lab)
 
 **Note:** The binder may take a minute to load. If you just want to quickly view something then use the [nbviewer](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/tree/master/).
 
