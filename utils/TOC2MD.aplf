@@ -1,4 +1,4 @@
- MD←TOC2MD TOC;MDList;depth;leaves;noblanks;i;spaces;noREADME
+ MD←TOC2MD TOC;MDList;depth;leaves;noblanks;i;spaces;noREADME;noMD
  MDList←{'- [',⍵,'](',⍵,')'}
  depth←≡¨TOC
  ⍝MD←MDList¨TOC/⍨1=depth
@@ -9,7 +9,7 @@
  leaves←⊃NestedLeaves MD
  noblanks←(~leaves(∧/=)¨⊂' ')
  noREADME←~'- [README.ipynb]'∘{⍺≡(≢⍺)↑⍵}¨leaves
- noREADME∧←~'- [README.md]'∘{⍺≡(≢⍺)↑⍵}¨leaves
+ noREADME∧←~(⊂'.md')(∨/⍷)¨leaves
  leaves←leaves/⍨noblanks∧noREADME
  spaces←spaces/⍨noREADME/⍨noblanks
  MD←↑{,/⍵}⌺(2 1⍴2)⊢((2×spaces)/¨' ')(,,⍤0)leaves
