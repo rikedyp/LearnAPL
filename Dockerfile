@@ -1,4 +1,4 @@
-FROM rikedyp/dyalog-jupyter-binder:50
+FROM rikedyp/dyalog-jupyter-binder:51
 COPY ./Catalogues ${HOME}/Catalogues
 COPY ./Tutorials ${HOME}/Tutorials
 COPY ./Projects ${HOME}/Projects
