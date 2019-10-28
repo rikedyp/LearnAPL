@@ -1,0 +1,6 @@
+num←1 2 3
+char←'APL'
+2⎕FIX'file://foo.dyalog'
+&!
+&⍎⎕←3⍴⎕UCS 10
+&⍎⎕←'Assign 123 to the name "area"'
