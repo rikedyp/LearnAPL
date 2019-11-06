@@ -1,6 +1,6 @@
-# APL course
+# Learn APL
 
-> Click [this link](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/blob/master/README.ipynb) to view the course.
+> Click [this link](https://nbviewer.jupyter.org/github/rikedyp/APLcourse/blob/master/README.ipynb) to view the materials.
 
 ***
 
