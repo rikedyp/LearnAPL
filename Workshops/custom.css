@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "APL385";
+  src: local("APL385 Unicode")
+}
+@font-face {
+  font-family: "APL385 Unicode";
+  src: local("APL385 Unicode")
+}
+h1,h2,h3,p {
+  font-family: "APL385" !important;
+}
+.err {
+    border: none!important;
+}
