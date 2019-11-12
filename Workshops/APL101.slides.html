@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Introduction slides</title>
+<title>APL101 slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12738,37 +12738,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction-to-APL">Introduction to APL<a class="anchor-link" href="#Introduction-to-APL">&#182;</a></h1><p>Array-oriented programming</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>APL is a programming language unlike most. Its primary distinguishing features are its use of symbols and array-orientation.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>It is a <strong>mathematical notation</strong> that just happens to be machine-executable.</p>
-<p>It is <strong>A</strong> <strong>P</strong>rogramming <strong>L</strong>anguage.</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here are all the primitve functions and operators in APL:</p>
-
-<pre><code>+ - × ÷ * ⍟ ⌹ ○ ! ? | ⌈ ⌊ ⊥ ⊤ ⊣ ⊢ = ≠ ≤ &lt; &gt; ≥ ≡ ≢ ∨ ∧ ⍲ ⍱ ↑ ↓ ⊂ ⊃ ⊆ ⌷ ⍋ ⍒ ⍳ ⍸ ∊ ⍷ ∪ ∩ ~ / \ ⌿ ⍀ , ⍪ ⍴ ⌽ ⊖ ⍉ ¨ ⍨ ⍣ . ∘ ⍤ @ ⍞ ⎕ ⍠ ⌸ ⌺ ⌶ ⍎ ⍕ ⋄ ⍝ → ⍵ ⍺ ∇ &amp; ¯ ⍬</code></pre>
+<h1 id="APL-101">APL 101<a class="anchor-link" href="#APL-101">&#182;</a></h1><ul>
+<li>The syntax rule</li>
+<li>Baby's first operator</li>
+<li>Assigning names</li>
+<li><code>+ - × ÷ ⌈ ⌊</code></li>
+</ul>
 
 </div>
 </div>
@@ -12778,16 +12753,25 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h2 id="Examples">Examples<a class="anchor-link" href="#Examples">&#182;</a></h2><p>Here are some examples that show how APL can express complex things simply.</p>
-
+<h2 id="Function-application">Function application<a class="anchor-link" href="#Function-application">&#182;</a></h2>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Times tables:</p>
+<p>In traditional mathematics, there is a precedence hierarchy for the <a href="https://en.wikipedia.org/wiki/Order_of_operations">order of operations</a>. This is often taught as the acronym <strong>PEMDAS</strong> in the US, or <strong>BODMAS</strong> or <strong>BIDMAS</strong> in other English speaking countries. In APL, there is no such precedence rule.</p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em><strong>Monadic</strong></em> (prefix) functions take the result of the statement to their right as their argument.<br>
+<em><strong>Dyadic</strong></em> (infix) functions take the arguments to their left and right as their two arguments.</p>
 
 </div>
 </div>
@@ -12797,7 +12781,10 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="na">∘.</span><span class="o">×</span><span class="na">⍨</span><span class="o">⍳</span><span class="m">12</span>
+<div class=" highlight hl-APL"><pre><span></span><span class="c1">⍝ Dyadic × multiplies its arguments</span>
+<span class="m">3</span> <span class="o">×</span> <span class="m">5</span>
+<span class="c1">⍝ Monadic × gives the signum (sign) of its argument</span>
+<span class="o">×</span> <span class="m">3</span> <span class="m">2</span> <span class="m">¯8</span> <span class="m">1</span> <span class="m">0</span> <span class="m">¯1</span>
 </pre></div>
 
 </div>
@@ -12815,18 +12802,20 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace"> 1  2  3  4  5  6  7  8   9  10  11  12
- 2  4  6  8 10 12 14 16  18  20  22  24
- 3  6  9 12 15 18 21 24  27  30  33  36
- 4  8 12 16 20 24 28 32  36  40  44  48
- 5 10 15 20 25 30 35 40  45  50  55  60
- 6 12 18 24 30 36 42 48  54  60  66  72
- 7 14 21 28 35 42 49 56  63  70  77  84
- 8 16 24 32 40 48 56 64  72  80  88  96
- 9 18 27 36 45 54 63 72  81  90  99 108
-10 20 30 40 50 60 70 80  90 100 110 120
-11 22 33 44 55 66 77 88  99 110 121 132
-12 24 36 48 60 72 84 96 108 120 132 144
+<span style="white-space:pre; font-family: monospace">15
+</span>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<span style="white-space:pre; font-family: monospace">1 1 ¯1 1 0 ¯1
 </span>
 </div>
 
@@ -12840,59 +12829,42 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of seconds in a day:</p>
+<blockquote><h3 id="Task-A.1">Task <strong>A.1</strong><a class="anchor-link" href="#Task-A.1">&#182;</a></h3><p>What are the functions of the prefix and infix versions of the following primitives?<br>
+a) +<br>
+b) -<br>
+c) ÷<br>
+d) ⌈<br>
+e) ⌊</p>
+</blockquote>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="Reduction">Reduction<a class="anchor-link" href="#Reduction">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h3 id="Problem">Problem<a class="anchor-link" href="#Problem">&#182;</a></h3><p>We want to find the sum of a list of numbers</p>
+</blockquote>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="m">24</span> <span class="m">60</span> <span class="m">60</span><span class="o">⊥</span><span class="m">1</span> <span class="m">0</span> <span class="m">0</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[3]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">3600
-</span>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of seconds in a year:</p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="m">365</span> <span class="m">24</span> <span class="m">60</span> <span class="m">60</span><span class="o">⊥</span><span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
+<div class=" highlight hl-APL"><pre><span></span><span class="m">1</span> <span class="m">2</span> <span class="m">3</span> <span class="m">4</span> <span class="m">5</span> <span class="m">6</span> <span class="m">7</span> <span class="m">8</span> <span class="m">9</span> <span class="c1">⍝ List of numbers from 1 to 9</span>
 </pre></div>
 
 </div>
@@ -12910,7 +12882,7 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">86400
+<span style="white-space:pre; font-family: monospace">1 2 3 4 5 6 7 8 9
 </span>
 </div>
 
@@ -12919,22 +12891,23 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section><section>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sum the first 100 natural numbers:</p>
+<blockquote><h3 id="Solution">Solution<a class="anchor-link" href="#Solution">&#182;</a></h3><p>Insert <code>+</code> between each element in the list</p>
+</blockquote>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="o">+</span><span class="na">/</span><span class="o">⍳</span><span class="m">100</span>
+<div class=" highlight hl-APL"><pre><span></span><span class="m">1</span><span class="o">+</span><span class="m">2</span><span class="o">+</span><span class="m">3</span><span class="o">+</span><span class="m">4</span><span class="o">+</span><span class="m">5</span><span class="o">+</span><span class="m">6</span><span class="o">+</span><span class="m">7</span><span class="o">+</span><span class="m">8</span><span class="o">+</span><span class="m">9</span>
 </pre></div>
 
 </div>
@@ -12952,49 +12925,7 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">5050
-</span>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Mean average of the first 100 natural numbers:</p>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="p">(</span><span class="o">+</span><span class="na">/</span><span class="o">÷≢</span><span class="p">)</span><span class="o">⍳</span><span class="m">100</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[6]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">50.5
+<span style="white-space:pre; font-family: monospace">45
 </span>
 </div>
 
@@ -13008,17 +12939,28 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The first 18 triangular numbers:</p>
+<blockquote><h3 id="Problem">Problem<a class="anchor-link" href="#Problem">&#182;</a></h3><p>Inserting <code>+</code> between each element in the list is tedious, repetetive and boring</p>
+</blockquote>
 
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h3 id="Solution">Solution<a class="anchor-link" href="#Solution">&#182;</a></h3><p>The reduction operator <code>/</code></p>
+</blockquote>
+
+</div>
+</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="o">+</span><span class="na">\</span><span class="o">⍳</span><span class="m">18</span>
+<div class=" highlight hl-APL"><pre><span></span><span class="m">1</span><span class="o">+</span><span class="m">2</span><span class="o">+</span><span class="m">3</span><span class="o">+</span><span class="m">4</span><span class="o">+</span><span class="m">5</span><span class="o">+</span><span class="m">6</span><span class="o">+</span><span class="m">7</span><span class="o">+</span><span class="m">8</span><span class="o">+</span><span class="m">9</span>
 </pre></div>
 
 </div>
@@ -13031,12 +12973,12 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171
+<span style="white-space:pre; font-family: monospace">45
 </span>
 </div>
 
@@ -13045,22 +12987,13 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The first 20 fibonacci numbers:</p>
-
-</div>
-</div>
-</div><div class="fragment">
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="m">1</span><span class="o">,</span><span class="kt">{</span><span class="o">⊃</span><span class="p">(</span><span class="o">+</span><span class="na">/</span><span class="o">,⊃</span><span class="p">)</span><span class="na">⍣</span><span class="bp">⍵</span><span class="o">⊢</span><span class="m">1</span><span class="kt">}</span><span class="na">¨</span><span class="o">⍳</span><span class="m">19</span>
+<div class=" highlight hl-APL"><pre><span></span><span class="o">+</span><span class="na">/</span><span class="m">1</span> <span class="m">2</span> <span class="m">3</span> <span class="m">4</span> <span class="m">5</span> <span class="m">6</span> <span class="m">7</span> <span class="m">8</span> <span class="m">9</span>
 </pre></div>
 
 </div>
@@ -13078,136 +13011,7 @@ a.anchor-link {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765
-</span>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Randomly deal a deck of cards:</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="kt">{</span><span class="bp">⍵</span><span class="o">∩</span><span class="na">⍤</span><span class="m">1</span><span class="o">⊢</span><span class="bp">⍵</span><span class="sr">[</span><span class="m">4</span> <span class="m">13</span><span class="o">⍴</span><span class="m">52</span><span class="o">?</span><span class="m">52</span><span class="sr">]</span><span class="kt">}</span><span class="o">,</span><span class="s1">&#39;♠♥♣♦&#39;</span><span class="na">∘.</span><span class="o">,</span><span class="s1">&#39;AKQJT98765432&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[9]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">┌──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┐
-│♠A│♠T│♠5│♠4│♥A│♥J│♥6│♣9│♣6│♣5│♦9│♦6│♦2│
-├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
-│♠Q│♠3│♠2│♥T│♥7│♥5│♥2│♣A│♣T│♣4│♦Q│♦J│♦3│
-├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
-│♠8│♠7│♥K│♥8│♥4│♣Q│♣J│♣7│♣3│♣2│♦A│♦T│♦4│
-├──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┼──┤
-│♠K│♠J│♠9│♠6│♥Q│♥9│♥3│♣K│♣8│♦K│♦8│♦7│♦5│
-└──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┘
-</span>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>FizzBuzz in APL:</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="o">↑</span><span class="kt">{</span><span class="p">(</span><span class="s1">&#39;FizzBuzz&#39;</span> <span class="s1">&#39;Fizz&#39;</span> <span class="s1">&#39;Buzz&#39;</span> <span class="bp">⍵</span><span class="p">)</span><span class="sr">[</span><span class="m">1</span><span class="o">⍳</span><span class="na">⍨</span><span class="m">0</span><span class="o">=</span><span class="m">15</span> <span class="m">3</span> <span class="m">5</span><span class="o">|</span><span class="bp">⍵</span><span class="sr">]</span><span class="kt">}</span><span class="na">¨</span><span class="o">⍳</span><span class="m">20</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[10]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">┌─┬─┬────┬─┬────┬────┬─┬─┬────┬────┬──┬────┬──┬──┬────────┬──┬──┬────┬──┬────┐
-│1│2│Fizz│4│Buzz│Fizz│7│8│Fizz│Buzz│11│Fizz│13│14│FizzBuzz│16│17│Fizz│19│Buzz│
-└─┴─┴────┴─┴────┴────┴─┴─┴────┴────┴──┴────┴──┴──┴────────┴──┴──┴────┴──┴────┘
-</span>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-APL"><pre><span></span><span class="kt">{</span><span class="nv">x</span><span class="kd">←</span><span class="err">⍸</span><span class="p">(</span><span class="o">⊂</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">≡</span><span class="na">¨</span><span class="bp">⍵</span> <span class="p">⋄</span> <span class="nv">x</span><span class="err">@</span><span class="nv">x</span><span class="o">⊢</span><span class="bp">⍵</span><span class="kt">}</span><span class="p">(</span><span class="s1">&#39;&#39;</span> <span class="s1">&#39;Fizz&#39;</span> <span class="s1">&#39;Buzz&#39;</span> <span class="s1">&#39;FizzBuzz&#39;</span><span class="p">)</span><span class="sr">[</span><span class="m">1</span><span class="o">++</span><span class="na">⌿</span><span class="m">1</span> <span class="m">2</span><span class="o">×</span><span class="na">⍤</span><span class="m">0</span> <span class="m">1</span><span class="o">⊢</span><span class="m">0</span><span class="o">=</span><span class="m">3</span> <span class="m">5</span><span class="na">∘.</span><span class="o">|⍳</span><span class="m">20</span><span class="sr">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[11]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<span style="white-space:pre; font-family: monospace">┌─┬─┬────┬─┬────┬────┬─┬─┬────┬────┬──┬────┬──┬──┬────────┬──┬──┬────┬──┬────┐
-│1│2│Fizz│4│Buzz│Fizz│7│8│Fizz│Buzz│11│Fizz│13│14│FizzBuzz│16│17│Fizz│19│Buzz│
-└─┴─┴────┴─┴────┴────┴─┴─┴────┴────┴──┴────┴──┴──┴────────┴──┴──┴────┴──┴────┘
+<span style="white-space:pre; font-family: monospace">45
 </span>
 </div>
 
@@ -13222,171 +13026,31 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h2 id="APL-is-old">APL is old<a class="anchor-link" href="#APL-is-old">&#182;</a></h2><p>APL is actually one of the first programming languages ever.</p>
-<p><a href="https://www.youtube.com/watch?v=Og847HVwRSI">Most popular programming languages 1965-2019</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Historically, those who found success with APL were not traditionally "computer scientists", "mathematicians" or "programmers".</p>
-<p>There has been some divide between the "array programming" community (APL/J/K) and the "computer science" community (Python/Jula/R/MATLAB/C/Etc...).</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="APLTypeBall.jpg" alt="APLTypeBall.jpg"></p>
-<p><a href="https://www.youtube.com/watch?v=vNUEUth7qjc">IBM Selectric Typewriter</a></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Uses-of-APL">Uses of APL<a class="anchor-link" href="#Uses-of-APL">&#182;</a></h2><p>Historically</p>
-<ul>
-<li>Insurance / Actuarial science</li>
-<li>Business / Finance </li>
-<li>Neural networks</li>
-</ul>
-<p>Today:</p>
-<ul>
-<li>Oil cracking (ExxonMobil: Structure-oriented lumping)</li>
-<li>High frequency trading (q / kdb+)</li>
-<li>Healthcare</li>
-<li>Anthropology</li>
-<li>Agriculture </li>
-<li>Simulation (Stormwind boating simulator)</li>
-<li>Automotive production (Volvo)</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="The-APL-Pocket-Calculator">The APL Pocket Calculator<a class="anchor-link" href="#The-APL-Pocket-Calculator">&#182;</a></h2><p>APL has a darn sight more symbols than your typical pocket calculator (or calculator app on your phone).  We can get a full scientific calculator's worth of functionality right now. The following is based on the <a href="https://www.amazon.co.uk/Casio-FX-83GTPLUS-S-UH-FX-83GTPLUS-Scientific-Calculator/dp/B001O3IF9U">Casio fx-83GT PLUS</a>.</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table style="font-size:120%">
-    <tr>
-        <td>$fx-83GT PLUS$</td>
-        <td style='font-family:"APL385 Unicode";'>APL</td>
-    </tr>
-    <tr>
-        <td>Abs</td>
-        <td style='font-family:"APL385 Unicode";'>|x</td>
-    </tr>
-    <tr>
-        <td>$x^n$</td>
-        <td style='font-family:"APL385 Unicode";'>x*n</td>
-    </tr>
-    <tr>
-        <td>$3\times 10^{5}$</td>
-        <td style='font-family:"APL385 Unicode";'>3E5</td>
-    </tr>
-    <tr>
-        <td>$x!$</td>
-        <td style='font-family:"APL385 Unicode";'>!x</td>
-    </tr>
-    <tr>
-        <td>$x^{-1}$</td>
-        <td style='font-family:"APL385 Unicode";'>÷x</td>
-    </tr>
-    <tr>
-        <td>$log_{a}{b}$</td>
-        <td style='font-family:"APL385 Unicode";'>a⍟b</td>
-    </tr>
-    <tr>
-        <td>${a} {{b}\over{c}}$</td>
-        <td style='font-family:"APL385 Unicode";'>a+b÷c</td>
-    </tr>
-    <tr>
-        <td>$\sqrt[a]{b}$</td>
-        <td style='font-family:"APL385 Unicode";'>b*÷a</td>
-    </tr>
-    <tr>
-        <td>$e^x$</td>
-        <td style='font-family:"APL385 Unicode";'>*x</td>
-    </tr>
+<h2 id="Common-reductions">Common reductions<a class="anchor-link" href="#Common-reductions">&#182;</a></h2><table>
+<thead><tr>
+<th>Traditional mathematical notation</th>
+<th>APL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sum_{i=1}^{N} v_i$</td>
+<td>+/vec</td>
+</tr>
+<tr>
+<td>$\prod_{i=1}^{N} v_i$</td>
+<td></td>
+</tr>
+<tr>
+<td>$max(v)$</td>
+<td></td>
+</tr>
+<tr>
+<td>$min(v)$</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table style="font-size:120%">  
-    <tr>
-        <td>$fx-83GT PLUS$</td>
-        <td style='font-family:"APL385 Unicode";'>APL</td>
-    </tr>    
-    <tr>
-        <td>$\pi$</td>
-        <td style='font-family:"APL385 Unicode";'>○1</td>
-    </tr>
-    <tr>
-        <td>ln $x$</td>
-        <td style='font-family:"APL385 Unicode";'>⍟x</td>
-    </tr>
-    <tr>
-        <td>$\sin x$</td>
-        <td style='font-family:"APL385 Unicode";'>1○x</td>
-    </tr>
-    <tr>
-        <td>$\cos x$</td>
-        <td style='font-family:"APL385 Unicode";'>2○x</td>
-    </tr>
-    <tr>
-        <td>$\tan x$</td>
-        <td style='font-family:"APL385 Unicode";'>3○x</td>
-    </tr>
-    <tr>
-        <td>nCr</td>
-        <td style='font-family:"APL385 Unicode";'>r!n</td>
-    </tr>
-    <tr>
-        <td>nPr</td>
-        <td style='font-family:"APL385 Unicode";'>(!n)÷!n-r</td>
-    </tr>
-    <tr>
-        <td>Rnd</td>
-        <td style='font-family:"APL385 Unicode";'>⌊0.5∘+</td>
-    </tr>
-    <tr>
-        <td>S⇔D</td>
-        <td style='font-family:"APL385 Unicode";'>(1∧⊢,÷)x</td>
-    </tr>
-</table>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Inputting-symbols">Inputting symbols<a class="anchor-link" href="#Inputting-symbols">&#182;</a></h2><p>Your keyboard probably doesn't do <code>×</code> or <code>÷</code> or a lot of the other symbols by default. We have <a href="../Tutorials/TypingAPL.ipynb">a guide</a> which gives a couple of ways of inputting APL symbols (without copying and pasting each symbol individually).</p>
 
 </div>
 </div>
