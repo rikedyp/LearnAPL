@@ -12740,8 +12740,8 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="APL-101">APL 101<a class="anchor-link" href="#APL-101">&#182;</a></h1><ul>
 <li>The syntax rule</li>
-<li>Baby's first operator</li>
 <li>Assigning names</li>
+<li>Baby's first operator</li>
 <li><code>+ - × ÷ ⌈ ⌊</code></li>
 </ul>
 
@@ -12775,16 +12775,16 @@ a.anchor-link {
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-APL"><pre><span></span><span class="c1">⍝ Dyadic × multiplies its arguments</span>
 <span class="m">3</span> <span class="o">×</span> <span class="m">5</span>
 <span class="c1">⍝ Monadic × gives the signum (sign) of its argument</span>
-<span class="o">×</span> <span class="m">3</span> <span class="m">2</span> <span class="m">¯8</span> <span class="m">1</span> <span class="m">0</span> <span class="m">¯1</span>
+<span class="o">×</span> <span class="m">3.2</span> <span class="m">2</span> <span class="m">¯8.7</span> <span class="m">1.5</span> <span class="m">0</span> <span class="m">¯1.5</span>
 </pre></div>
 
 </div>
@@ -12797,7 +12797,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -12810,7 +12810,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[2]:</div>
+<div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -12824,7 +12824,7 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12839,7 +12839,155 @@ e) ⌊</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="Assigning-names">Assigning names<a class="anchor-link" href="#Assigning-names">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is a list of numbers</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-APL"><pre><span></span><span class="m">1</span> <span class="m">5</span> <span class="m">23</span> <span class="m">14</span> <span class="m">7</span> <span class="m">8</span> <span class="m">10</span> <span class="m">12</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<span style="white-space:pre; font-family: monospace">1 5 23 14 7 8 10 12
+</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We don't want to write this list out over and over, or copy and paste it, so we assign it to a name.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-APL"><pre><span></span><span class="nv">list</span> <span class="kd">←</span> <span class="m">1</span> <span class="m">5</span> <span class="m">23</span> <span class="m">14</span> <span class="m">7</span> <span class="m">8</span> <span class="m">10</span> <span class="m">12</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, whenever we want to use our list, we can just use its name.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-APL"><pre><span></span><span class="nv">list</span> <span class="o">+</span> <span class="nv">list</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<span style="white-space:pre; font-family: monospace">2 10 46 28 14 16 20 24
+</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-APL"><pre><span></span><span class="m">2</span> <span class="o">×</span> <span class="nv">list</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<span style="white-space:pre; font-family: monospace">2 10 46 28 14 16 20 24
+</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -13020,13 +13168,22 @@ e) ⌊</p>
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Common-reductions">Common reductions<a class="anchor-link" href="#Common-reductions">&#182;</a></h2><table>
+<blockquote><h3 id="Task-A.2">Task <strong>A.2</strong><a class="anchor-link" href="#Task-A.2">&#182;</a></h3><p>Find the missing reductions in the table below</p>
+</blockquote>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
 <thead><tr>
 <th>Traditional mathematical notation</th>
 <th>APL</th>
@@ -13042,11 +13199,11 @@ e) ⌊</p>
 <td></td>
 </tr>
 <tr>
-<td>$max(v)$</td>
+<td>$\max(v)$</td>
 <td></td>
 </tr>
 <tr>
-<td>$min(v)$</td>
+<td>$\min(v)$</td>
 <td></td>
 </tr>
 </tbody>
@@ -13054,7 +13211,7 @@ e) ⌊</p>
 
 </div>
 </div>
-</div></section></section>
+</div></div></section></section>
 </div>
 </div>
 
