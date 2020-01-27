@@ -1,4 +1,5 @@
 FROM rikedyp/dyalog-jupyter-binder:51
+COPY ./Introductions ${HOME}/Introductions
 COPY ./Catalogues ${HOME}/Catalogues
 COPY ./Tutorials ${HOME}/Tutorials
 COPY ./Projects ${HOME}/Projects
